@@ -100,15 +100,13 @@
   box-sizing: border-box; }
 
 body {
-  background: #444;
-  color: #fff;
+  background: #5e5c5c;
+  color: #000000;
   height: 100%;
   margin: 0;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   line-height: 1.5; }
   body#bg-img {
-    background: url(../img/background.png);
-    background: rgba(68, 68, 68, 0.9), url(../img/background.png);
     background-attachment: fixed;
     background-size: cover; } 
 
@@ -116,6 +114,7 @@ h1,
 h2,
 h3 {
   margin: 0;
+  
   font-weight: 400; }
   h1.lg-heading,
   h2.lg-heading,
