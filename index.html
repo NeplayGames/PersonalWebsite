@@ -1,59 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="Description" content="Personal website of Bram / Shreejan." />
-    <meta name="robots" content="index, follow" />
-    <meta property="og:type" content="website" />
-    <meta property="og:title" content="Shreejan | Personal Website" />
-    <meta
-      property="og:description"
-      content="Personal website of Shreejan Pandey"
-    />
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Description" content="Personal website of Shreejan Pandey.">
+    <meta name="robots" content="index, follow">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Shreejan | Personal Website">
+    <meta property="og:description" content="Personal website of Shreejan Pandey.">
 
     <title>Shreejan | Personal Website</title>
-    <link rel="stylesheet" href="./style.css" />
-    <link rel="shortcut icon" href="./assets/me-pic.png" />
-    <script
-      async
-      src="https://www.googletagmanager.com/gtag/js?id=G-X6PCE0G53Q"
-    ></script>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="shortcut icon" href="./assets/me-pic.png">
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-X6PCE0G53Q"></script>
     <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag() {
-        dataLayer.push(arguments);
-      }
-      gtag('js', new Date());
-
-      gtag('config', 'G-X6PCE0G53Q');
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-X6PCE0G53Q');
     </script>
-  </head>
-  <body>
+</head>
+<body>
     <section class="container">
-      <div class="center">
-        <img class="profile-image" src="./assets/me-pic.jpeg" alt="my_photo" />
-        <div class="header"></div>
-        <h1>Hi, I'm Shreejan Pandey</h1>
-        <p>Software Developer from kathmandu, Nepal currently pursuing my master's in Computer Science from SIUE.</p>
-        <div class="main-content">
+        <div class="center">
+            <img class="profile-image" src="./assets/me-pic.jpeg" alt="my_photo">
+            <div class="header"></div>
+            <div class="about" id="about">
+                <div class="paras">
+                    <h2>🧬 ABOUT ME</h2>
+                    <h1>Shreejan Pandey</h1>
+                    <p>I am currently a master’s student pursuing a degree in Computer Science. My career as a Software Engineer spans 3 years, during which I've gained extensive experience in Software Development including Game Development.</p>
+                    <div class="skills">
+                        <h2>Technical Skills</h2>
+                        <p>I am proficient in C# and C++, and familiar with Python, Java, and Dart. My core competencies include Data Structures and Algorithms, Software Engineering, Object-Oriented Programming, User Interface Design and Optimization, Performance Optimization, Game Development, Debugging and Issue Resolution, and Version Control with Git.</p>
+                    </div>
+
+                    <p>See you around! ✌️</p>
+                </div>
+                <div class="main-content"></div>
+                <div class="buttons">
+                    <a target="_blank" class="button" href="https://github.com/NeplayGames">GitHub</a>
+                    <a target="_blank" class="button" href="https://www.linkedin.com/in/shreejan-pandey-b67371191/">LinkedIn</a>
+                    <a target="_blank" class="button" href="https://drive.google.com/file/d/1FQBgJy1C8ryQCIHtXpsxhtxsu3syfwb1/view?usp=drive_link">Resume</a>
+                    <a target="_blank" class="button" href="https://drive.google.com/file/d/17bVYqINTgLBhc24PPVVmJJZ2IGWUaBqc/view?usp=sharing">Portfolio</a>
+                </div>
+            </div>
+            <section class="projects-section">
+              <h2>🚀 Projects</h2>
+              <div class="projects-container">
+                <div class="project-card">
+                  <h3>Final Year Project</h3>
+                  <p>Project for my undergrad study to help visual impaired people using machine learning</p>
+                  <a href="https://github.com/NeplayGames/MajorProject" class="project-link">
+                    <i class="fab fa-github"></i> GitHub
+                    </a>
+                    </div>
+                <div class="project-card">
+                  <h3>WEBGL Games</h3>
+                  <p>Couple of games that I have created for webgl.</p>
+                  <a href="https://shreejanpandey.itch.io/" class="project-link">itch.io</a>
+                </div>
+                <!-- Add more project cards as needed -->
+              </div>
+            </section>
         </div>
-        <div class="buttons">
-          <a target="_blank" class="button" href="https://github.com/NeplayGames"
-            >Github</a
-          >
-          <a target="_blank" class="button" href="https://www.linkedin.com/in/shreejan-pandey-b67371191/"
-            >Linkedln</a
-          >
-          <a target="_blank" class="button" href="https://drive.google.com/file/d/1FQBgJy1C8ryQCIHtXpsxhtxsu3syfwb1/view?usp=drive_link"
-          >Resume</a
-        >
-        <a target="_blank" class="button" href="https://drive.google.com/file/d/17bVYqINTgLBhc24PPVVmJJZ2IGWUaBqc/view?usp=sharing"
-        >Portfolio</a
-      >
-        </div>
-      </div>
     </section>
-  </body>
+</body>
 </html>

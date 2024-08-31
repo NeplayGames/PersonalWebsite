@@ -5,38 +5,63 @@ body {
   text-align: center;
   max-width: 100%;
 }
+
 .container {
   max-width: 36rem;
   padding: 6rem 1rem;
   margin: 3rem auto 6rem;
 }
+
 .center {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
+
 .main-content {
   padding-bottom: 1rem;
 }
-.profile-image {
-  max-width: 300px;
-  height: 300px;
+
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+  border-bottom: 2px solid #ff6f61;
+  padding-bottom: 0.5rem;
 }
+
+h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #ff6f61;
+}
+
+p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
 .emojis {
   font-size: 2rem;
 }
+
 .contact-link {
   color: #ffffff;
   font-weight: bold;
 }
+
 button {
   border-radius: 8px;
 }
+
 .buttons {
   display: flex;
   flex-direction: row;
   align-items: center;
+  justify-content: center;
+  margin-top: 2rem;
 }
+
 .button {
   display: block;
   width: 100px;
@@ -50,6 +75,20 @@ button {
   font-weight: bold;
   line-height: 25px;
   text-decoration: none;
+  transition: background 0.3s ease;
+}
+
+.button:hover {
+  background: #ff6f61;
+  color: #fff;
+}
+
+.profile-image {
+  max-width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  object-fit: cover; /* Ensures the image covers the circle without distortion */
+  margin-bottom: 1.5rem;
 }
 
 /* For phones */
@@ -66,4 +105,80 @@ button {
     margin: 0;
     width: 95%;
   }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  p {
+    font-size: 1rem;
+  }
+
+  .profile-image {
+    max-width: 200px;
+    height: 200px;
+  }
+}
+.projects-section {
+  padding: 4rem 1rem;
+  background-color: #17191e;
+  color: #fff;
+}
+
+.projects-section h2 {
+  font-size: 2.5rem;
+  color: #ff6f61;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.projects-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+}
+
+.project-card {
+  background-color: #1e2127;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  text-align: left;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: #ff6f61;
+}
+
+.project-card p {
+  font-size: 1rem;
+  line-height: 1.5;
+  margin-bottom: 1rem;
+}
+
+.project-card .project-link {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.5rem 1rem;
+  background-color: #ff6f61;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.project-card .project-link:hover {
+  background-color: #ff3b30;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.5);
 }
