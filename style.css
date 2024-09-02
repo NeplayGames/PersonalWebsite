@@ -8,7 +8,7 @@ body {
 
 .container {
   max-width: 36rem;
-  padding: 6rem 1rem;
+  /* padding: 6rem 1rem; */
   margin: 3rem auto 6rem;
 }
 
@@ -34,7 +34,16 @@ h2 {
   margin-bottom: 1rem;
   color: #ff6f61;
 }
-
+h3 {
+  font-size: 1.7rem;
+  margin-bottom: 1rem;
+  color: #c46960;
+}
+strong {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: #d0948f;
+}
 p {
   font-size: 1.1rem;
   line-height: 1.6;

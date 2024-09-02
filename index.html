@@ -20,51 +20,190 @@
         gtag('js', new Date());
         gtag('config', 'G-X6PCE0G53Q');
     </script>
+    <style>
+        /* Add your styles here */
+        .hidden {
+            display: none;
+        }
+        .buttons {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-bottom: 20px; /* Space between buttons and content */
+        }
+        .section-button {
+            margin: 0;
+            padding: 10px;
+            border: none;
+            background-color: #007bff;
+            color: #fff;
+            cursor: pointer;
+            width: 150px; /* Fixed width for all buttons */
+            height: 50px; /* Fixed height for all buttons */
+            text-align: center;
+            line-height: 30px; /* Align text vertically */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .section-button:hover {
+            background-color: #0056b3;
+        }
+        .section-content {
+            margin: 10px 0; /* Reduced gap on top */
+        }
+        .education-content, .project-content {
+            line-height: 1.6;
+        }
+        .education-content h3, .project-content h3 {
+            margin-top: 0;
+        }
+        .project-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px; /* Space between cards */
+            justify-content: center; /* Center align cards */
+        }
+        .project-card {
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 15px;
+            width: 200px; /* Fixed width for cards */
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            background-color: #0c0000;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .project-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+        }
+        .project-card h3 {
+            margin-top: 0;
+        }
+        .project-card p {
+            margin: 5px 0;
+        }
+        .project-card a {
+            color: #007bff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .project-card a:hover {
+            text-decoration: underline;
+        }
+    </style>
+    <div class="buttons">
+        <a target="_blank" class="button" href="https://github.com/NeplayGames">GitHub</a>
+        <a target="_blank" class="button" href="https://www.linkedin.com/in/shreejan-pandey-b67371191/">LinkedIn</a>
+        <a target="_blank" class="button" href="https://drive.google.com/file/d/1FQBgJy1C8ryQCIHtXpsxhtxsu3syfwb1/view?usp=drive_link">Resume</a>
+        <a target="_blank" class="button" href="https://drive.google.com/file/d/17bVYqINTgLBhc24PPVVmJJZ2IGWUaBqc/view?usp=sharing">Portfolio</a>
+    </div>
 </head>
 <body>
     <section class="container">
+       
         <div class="center">
             <img class="profile-image" src="./assets/me-pic.jpeg" alt="my_photo">
             <div class="header"></div>
-            <div class="about" id="about">
-                <div class="paras">
-                    <h2>🧬 ABOUT ME</h2>
-                    <h1>Shreejan Pandey</h1>
-                    <p>I am currently a master’s student pursuing a degree in Computer Science. My career as a Software Engineer spans 3 years, during which I've gained extensive experience in Software Development including Game Development.</p>
-                    <div class="skills">
-                        <h2>Technical Skills</h2>
-                        <p>I am proficient in C# and C++, and familiar with Python, Java, and Dart. My core competencies include Data Structures and Algorithms, Software Engineering, Object-Oriented Programming, User Interface Design and Optimization, Performance Optimization, Game Development, Debugging and Issue Resolution, and Version Control with Git.</p>
-                    </div>
-
-                    <p>See you around! ✌️</p>
-                </div>
-                <div class="main-content"></div>
-                <div class="buttons">
-                    <a target="_blank" class="button" href="https://github.com/NeplayGames">GitHub</a>
-                    <a target="_blank" class="button" href="https://www.linkedin.com/in/shreejan-pandey-b67371191/">LinkedIn</a>
-                    <a target="_blank" class="button" href="https://drive.google.com/file/d/1FQBgJy1C8ryQCIHtXpsxhtxsu3syfwb1/view?usp=drive_link">Resume</a>
-                    <a target="_blank" class="button" href="https://drive.google.com/file/d/17bVYqINTgLBhc24PPVVmJJZ2IGWUaBqc/view?usp=sharing">Portfolio</a>
+            <!-- Buttons to show sections -->
+            <div class="buttons">
+                <button class="section-button" onclick="showSection('about')">About Me</button>
+                <button class="section-button" onclick="showSection('education')">Education</button>
+                <button class="section-button" onclick="showSection('experience')">Experience</button>
+                <button class="section-button" onclick="showSection('project')">Project</button>
+                <button class="section-button" onclick="showSection('skills')">Technical Skills</button>
+                <button class="section-button" onclick="showSection('research')">Research</button>
+            </div>
+        
+            <!-- Sections to show/hide -->
+            <div id="about" class="section-content">
+                <h2>🧬 ABOUT ME</h2>
+                <h1>Shreejan Pandey</h1>
+                <p>I am currently a master’s student pursuing a degree in Computer Science. My career as a Software Engineer spans 3 years, during which I've gained extensive experience in Software Development including Game Development.</p>
+                <p>See you around! ✌️</p>
+            </div>
+            <div id="education" class="section-content hidden education-content">
+                <h2>✍️ Education</h2>
+                <div class="education-item">
+                    <h3>Masters in Computer Science</h3>
+                    <p><strong>Southern Illinois University Edwardsville</strong></p>
+                    <p><strong>Year:</strong> 2024 - 2025 (Expected)</p>
                 </div>
             </div>
-            <section class="projects-section">
-              <h2>🚀 Projects</h2>
-              <div class="projects-container">
-                <div class="project-card">
-                  <h3>Final Year Project</h3>
-                  <p>Project for my undergrad study to help visual impaired people using machine learning</p>
-                  <a href="https://github.com/NeplayGames/MajorProject" class="project-link">
-                    <i class="fab fa-github"></i> GitHub
-                    </a>
+            <div id="project" class="section-content hidden project-content">
+                <h2>🛠️ Projects</h2>
+                <div class="project-container">
+                    <div class="project-card">
+                        <h3>Final Year Project</h3>
+                        <p><strong>Description:</strong> Project for my undergrad study to help visually impaired people using machine learning.</p>
+                        <a href="https://github.com/NeplayGames/MajorProject" target="_blank">View on GitHub</a>
                     </div>
-                <div class="project-card">
-                  <h3>WEBGL Games</h3>
-                  <p>Couple of games that I have created for webgl.</p>
-                  <a href="https://shreejanpandey.itch.io/" class="project-link">itch.io</a>
+                    <div class="project-card">
+                        <h3>WEBGL Games</h3>
+                        <p><strong>Description:</strong> A couple of games that I have created for webgl.</p>
+                        <a href="https://shreejanpandey.itch.io/" target="_blank">Play on itch.io</a>
+                    </div>
+                    <!-- Add more project cards as needed -->
                 </div>
-                <!-- Add more project cards as needed -->
-              </div>
-            </section>
+            </div>
+            <div id="experience" class="section-content hidden experience-content">
+                <h2>🛠️ Experience</h2>
+                <div class="experience-item">
+                    <h3>Software Engineer at Dreams Quest</h3>
+                    <p><strong>November 2022 – December 2023</strong></p>
+                    <ul>
+                        Engineered a high-performance Factory and Pooling system in C# to optimize game 
+                        performance, leveraging the VContainer DI framework for modularity in key systems 
+                        like combat and inventory. Additionally, I implemented various design patterns and 
+                        optimization techniques, significantly reducing load times and improving stability 
+                        across platforms.
+                    </ul>
+                </div>
+                <div class="experience-item">
+                    <h3>Software Engineer at Elementos</h3>
+                    <p><strong>December 2021 – October 2022</strong></p>
+                    <ul>
+                        Developed a dynamic Player vs. Environment mode with complex NPC interactions 
+                        using state machines and class hierarchies. Additionally, I implemented a seamless 
+                        PvP mode with Photon Engine, optimized performance through sprite and memory 
+                        enhancements, and improved gameplay with realistic projectile paths using Bezier curves.        
+                    </ul>
+                </div>
+                </div>
+            <div id="skills" class="section-content hidden">
+                <h2>🛠️ Technical Skills</h2>
+                <p>I am proficient in C# and C++, and familiar with Python, Java, and Dart. 
+                    My core competencies include Data Structures and Algorithms, Software Engineering, 
+                    Object-Oriented Programming, User Interface Design and Optimization, Performance 
+                    Optimization, Game Development, Debugging and Issue Resolution, and Version Control with Git.</p>
+            </div>
+            <div id="research" class="section-content hidden">
+                <h2>🔬 Contact</h2>
+                <p>Research in progress.</p>
+            </div>
         </div>
+  
     </section>
+    <script>
+        function showSection(sectionId) {
+            // Hide all sections
+            document.querySelectorAll('.section-content').forEach(function(section) {
+                section.classList.add('hidden');
+            });
+            // Show the selected section
+            document.getElementById(sectionId).classList.remove('hidden');
+        }
+
+        // Show the "About Me" section by default
+        document.addEventListener('DOMContentLoaded', function() {
+            showSection('about');
+        });
+    </script>
+   
 </body>
+
 </html>
+   
+
+
+
