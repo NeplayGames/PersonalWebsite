@@ -7,7 +7,7 @@ body {
 }
 
 .container {
-  max-width: 36rem;
+  max-width: 66rem;
   /* padding: 6rem 1rem; */
   margin: 3rem auto 6rem;
 }
@@ -93,8 +93,8 @@ button {
 }
 
 .profile-image {
-  max-width: 300px;
-  height: 300px;
+  max-width: 200px;
+  height: 200px;
   border-radius: 50%;
   object-fit: cover; /* Ensures the image covers the circle without distortion */
   margin-bottom: 1.5rem;

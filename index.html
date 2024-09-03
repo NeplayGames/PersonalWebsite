@@ -29,7 +29,7 @@
             display: flex;
             flex-wrap: wrap;
             gap: 10px;
-            margin-bottom: 20px; /* Space between buttons and content */
+            margin-bottom: 0px; /* Space between buttons and content */
         }
         .section-button {
             margin: 0;
@@ -50,7 +50,7 @@
             background-color: #0056b3;
         }
         .section-content {
-            margin: 10px 0; /* Reduced gap on top */
+            margin:  0; /* Reduced gap on top */
         }
         .education-content, .project-content {
             line-height: 1.6;
@@ -91,12 +91,6 @@
             text-decoration: underline;
         }
     </style>
-    <div class="buttons">
-        <a target="_blank" class="button" href="https://github.com/NeplayGames">GitHub</a>
-        <a target="_blank" class="button" href="https://www.linkedin.com/in/shreejan-pandey-b67371191/">LinkedIn</a>
-        <a target="_blank" class="button" href="https://drive.google.com/file/d/1FQBgJy1C8ryQCIHtXpsxhtxsu3syfwb1/view?usp=drive_link">Resume</a>
-        <a target="_blank" class="button" href="https://drive.google.com/file/d/17bVYqINTgLBhc24PPVVmJJZ2IGWUaBqc/view?usp=sharing">Portfolio</a>
-    </div>
 </head>
 <body>
     <section class="container">
@@ -115,7 +109,7 @@
             </div>
         
             <!-- Sections to show/hide -->
-            <div id="about" class="section-content">
+            <div id="about" class="section-content hidden">
                 <h2>🧬 ABOUT ME</h2>
                 <h1>Shreejan Pandey</h1>
                 <p>I am currently a master’s student pursuing a degree in Computer Science. My career as a Software Engineer spans 3 years, during which I've gained extensive experience in Software Development including Game Development.</p>
@@ -181,7 +175,13 @@
                 <p>Research in progress.</p>
             </div>
         </div>
-  
+        <div class="buttons">
+            <h3>Know about me more? </h3>
+            <a target="_blank" class="button" href="https://github.com/NeplayGames">GitHub</a>
+            <a target="_blank" class="button" href="https://www.linkedin.com/in/shreejan-pandey-b67371191/">LinkedIn</a>
+            <a target="_blank" class="button" href="https://drive.google.com/file/d/1FQBgJy1C8ryQCIHtXpsxhtxsu3syfwb1/view?usp=drive_link">Resume</a>
+            <a target="_blank" class="button" href="https://drive.google.com/file/d/17bVYqINTgLBhc24PPVVmJJZ2IGWUaBqc/view?usp=sharing">Portfolio</a>
+        </div>
     </section>
     <script>
         function showSection(sectionId) {
