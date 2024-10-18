@@ -6,10 +6,10 @@ body {
     justify-content: center;
 }
 .container {
-    max-width: 600px;
+    max-width: 650px;
     margin: 50px auto;
     padding: 20px;
-    background-color: rgb(53, 48, 48);
+    background-color: rgb(20, 20, 20);
     border: 1px solid #ffffff;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
