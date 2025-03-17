@@ -1,139 +1,277 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="Description" content="Personal website of Shreejan Pandey.">
-    <meta name="robots" content="index, follow">
-    <meta property="og:type" content="website">
-    <meta property="og:title" content="Shreejan | Personal Website">
-    <meta property="og:description" content="Personal website of Shreejan Pandey.">
 
-    <title>Shreejan | Personal Website</title>
-    <link rel="stylesheet" href="./style.css">
-    <link rel="shortcut icon" href="./assets/me-pic.png">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description"
+        content="Experienced frontend web game developer specializing in creating engaging web-based games, user-friendly and dynamic websites. Skilled in HTML5, CSS3, and JavaScript. Available for freelance projects and collaborations." />
+    <meta name="author" content="shreejan" />
+    <title>Shreejan Pandey Unity Developer</title>
+    <!-- Favicon-->
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+    <!-- Font Awesome icons (free version)-->
+    <script src="https://use.fontawesome.com/releases/v6.6.0/js/all.js" crossorigin="anonymous"></script>
+    <!-- Google fonts-->
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Ropa+Sans:ital@0;1&amp;display=swap" rel="stylesheet"
+        type="text/css" />
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link href="css/styles.css" rel="stylesheet" />
 </head>
-<body>
-    <section class="container">
-        <div class="center">
-            <!-- Add Profile Photo Here -->
-            
-            <div class="buttons">
-                <button class="section-button" onclick="showSection('about')">About Me</button>
-                <button class="section-button" onclick="showSection('education')">Education</button>
-                <button class="section-button" onclick="showSection('experience')">Experience</button>
-                <button class="section-button" onclick="showSection('project')">Projects</button>
-                <button class="section-button" onclick="showSection('skills')">Technical Skills</button>
-            </div>
-            <img class="profile-image" src="./assets/me-pic.jpeg" alt="my_photo">
-            
-            <!-- Sections to show/hide -->
-            <div id="about" class="section-content">
-                <p>Hi there. You have visited the portfolio of Shreejan Pandey (Software Developer, Gameplay Engineer, Computer Science Graduate Student). 
-                    You can check out my <a href="https://drive.google.com/file/d/1FQBgJy1C8ryQCIHtXpsxhtxsu3syfwb1/view?usp=drive_link">Resume</a> 
-            and <a href="https://github.com/NeplayGames">GitHub</a>. This github consist of games that I have created from 2021 on my free time.
-        </p>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/W25Zzg4DStY" title="Video Portfolio" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        <p>
-            Currently, I am doing my masters in Computer Science from Southern Illinois University Edwardsville. 
-            Until recently I was at <a href="https://dreams.quest/">Dreams Quest</a> working remotely from Kathmandu, Nepal.
-             Before that I was in a company call Elementos
-            working on a turn based multiplayer game.
-            </p>
-            <p>
-                I would love to chat about internship opportunities, project I have worked on so far or anything.
-            </p>
-          <p>
-            Check out this Porfolio I created so that I could tell you what I have worked till now. I could not add some of the 
-            project and work due to NDA. I have added some of that on my Paper Portfolio below. 
-          </p>
-            <p>
-                See you around! ✌️
-           
-            
-            </div>
-            <div id="education" class="section-content hidden">
-                <h2>✍️ Education</h2>
-                <h3>Masters in Computer Science</h3>
-                <p><strong>Southern Illinois University Edwardsville</strong></p>
-                <p><strong>Year:</strong> 2024 - 2025 (Expected)</p>
-            </div>
-            <div id="project" class="section-content hidden">
-                <h2>🛠️ Projects</h2>
-                <div class="project-container">
-                    <div class="project-card">
-                        <h3>Final Year Project</h3>
-                        <p><strong>Description:</strong> <br> Project for my undergrad study to help visually impaired people using machine learning.</p>
-                        <a href="https://github.com/NeplayGames/MajorProject" target="_blank">View on GitHub</a>
-                    </div>
-                    <div class="project-card">
-                        <h3>WEBGL Games</h3>
-                        <p><strong>Description:</strong><br>  A couple of games that I have created for webgl.</p>
-                        <a href="https://shreejanpandey.itch.io/" target="_blank">Play on itch.io</a>
-                    </div>
-                </div>
-            </div>
-            <div id="experience" class="section-content hidden">
-                <h2>🛠️ Experience</h2>
-                <div class="experience-item">
-                    <h3>Software Engineer at Dreams Quest</h3>
-                    <p><strong>November 2022 – December 2023</strong></p>
-                    <p>
-                        Engineered a high-performance Factory and Pooling system in C# to optimize game 
-                        performance, leveraging the VContainer DI framework for modularity in key systems 
-                        like combat and inventory. Additionally, I implemented various design patterns and 
-                        optimization techniques, significantly reducing load times and improving stability 
-                        across platforms.
-                    </p>
-                </div>
-                <div class="experience-item">
-                    <h3>Software Engineer at Elementos</h3>
-                    <p><strong>December 2021 – October 2022</strong></p>
-                    <p>
-                        Developed a dynamic Player vs. Environment mode with complex NPC interactions 
-                        using state machines and class hierarchies. Additionally, I implemented a seamless 
-                        PvP mode with Photon Engine, optimized performance through sprite and memory 
-                        enhancements, and improved gameplay with realistic projectile paths using Bezier curves.         
-                    </p>
-                </div>
-            </div>
-            <div id="skills" class="section-content hidden">
-                <h2>🛠️ Technical Skills</h2>
-                <p>
-                    I am proficient in C# and C++, and familiar with Python, Java, and Dart.
-                    My core competencies include Data Structures and Algorithms, Software Engineering, Object-Oriented Programming, 
-                    User Interface Design and Optimization, Performance Optimization, Game Development, Debugging and Issue Resolution, 
-                    and Version Control with Git.
-                </p>
-            </div>
-            <div id="research" class="section-content hidden">
-                <h2>🔬 Research</h2>
-                <p>Research in progress.</p>
+
+<body id="page-top">
+    <!-- Navigation-->
+    <nav class="navbar navbar-expand-lg text-uppercase fixed-top" id="mainNav">
+        <div class="container">
+            <a class="navbar-brand" href="#page-top">shreejan pandey</a>
+            <button class="navbar-toggler text-uppercase font-weight-bold bg-primary text-white rounded" type="button"
+                data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive"
+                aria-expanded="false" aria-label="Toggle navigation">
+                Menu
+                <i class="fas fa-bars"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded"
+                            href="#portfolio">Portfolio</a></li>
+                    <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded"
+                            href="#about">About</a></li>
+                    <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded"
+                            href="#contact">Contact</a></li>
+                </ul>
             </div>
         </div>
-        <div class="buttons">
-            <a target="_blank" class="button" href="https://github.com/NeplayGames">GitHub</a>
-            <a target="_blank" class="button" href="https://www.linkedin.com/in/shreejan-pandey-b67371191/">LinkedIn</a>
-            <a target="_blank" class="button" href="https://drive.google.com/file/d/1FQBgJy1C8ryQCIHtXpsxhtxsu3syfwb1/view?usp=drive_link">Resume</a>
-            <a target="_blank" class="button" href="https://drive.google.com/file/d/17bVYqINTgLBhc24PPVVmJJZ2IGWUaBqc/view?usp=sharing">Portfolio</a>
+    </nav>
+    <!-- Masthead-->
+    <header class="masthead text-center">
+        <div class="container d-flex align-items-center flex-column">
+            <!-- Masthead Avatar Image-->
+            <img class="masthead-avatar mb-5" src="assets/img/shreejan.jpeg"
+                alt="shreejan" />
+            <!-- Masthead Heading-->
+            <h1 class="masthead-heading text-uppercase mb-0">Software / Game Developer</h1>
+            <!-- Icon Divider-->
+            <div class="divider-custom">
+                <div class="divider-custom-line bg-primary"></div>
+                <div class="divider-custom-icon"><i class="fas fa-gamepad text-primary"></i></div>
+                <div class="divider-custom-line bg-primary"></div>
+            </div>
+            <!-- Masthead Subheading-->
+            <h2 class="masthead-subheading font-weight-light mb-0">
+                Skills: Unity, Unreal, C#, C++
+            </h2>
+        </div>
+    </header>
+    <!-- Portfolio Section-->
+    <section class="page-section portfolio" id="portfolio">
+        <div class="container">
+            <!-- Portfolio Section Heading-->
+            <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Portfolio</h2>
+            <!-- Icon Divider-->
+            <div class="divider-custom">
+                <div class="divider-custom-line"></div>
+                <div class="divider-custom-icon"><i class="fas fa-code"></i></div>
+                <div class="divider-custom-line"></div>
+            </div>
+            <!-- Portfolio Grid Items-->
+            <div class="row justify-content-center">
+                <!-- Portfolio Item 1-->
+                <div class="col-md-6 col-lg-4 mb-5">
+                    <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal1">
+                        <div
+                            class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                            <div class="portfolio-item-caption-content text-center text-white"><i
+                                    class="fas fa-plus fa-3x"></i></div>
+                        </div>
+                        <img class="img-fluid" src="assets/img/portfolio/game.png" alt="..." />
+                    </div>
+                </div>
+                <!-- Portfolio Item 2-->
+                <!-- <div class="col-md-6 col-lg-4 mb-5">
+                    <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal2">
+                        <div
+                            class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                            <div class="portfolio-item-caption-content text-center text-white"><i
+                                    class="fas fa-plus fa-3x"></i></div>
+                        </div>
+                        <img class="img-fluid" src="assets/img/portfolio/cake.png" alt="..." />
+                    </div>
+                </div> -->
+            </div>
         </div>
     </section>
-    <h4>@Shreejan Pandey 2024</h4>
-    <script>
-        function showSection(sectionId) {
-            // Hide all sections
-            document.querySelectorAll('.section-content').forEach(function(section) {
-                section.classList.add('hidden');
-            });
-            // Show the selected section
-            document.getElementById(sectionId).classList.remove('hidden');
-        }
+    <!-- About Section-->
+    <section class="page-section bg-primary text-white mb-0" id="about">
+        <div class="container">
+            <!-- About Section Heading-->
+            <h2 class="page-section-heading text-center text-uppercase text-white">About</h2>
+            <!-- Icon Divider-->
+            <div class="divider-custom divider-light">
+                <div class="divider-custom-line"></div>
+                <div class="divider-custom-icon"><i class="fas fa-mug-saucer"></i></div>
+                <div class="divider-custom-line"></div>
+            </div>
+            <!-- About Section Content-->
+            <div class="row">
+                <div class="col-lg-4 ms-auto">
+                    <p class="lead">
+                        Hi there. You have visited the portfolio of Shreejan Pandey (Software Developer, Gameplay
+                        Engineer, Computer Science Graduate Student). </p>
+                </div>
+                <div class="col-lg-4 me-auto">
+                    <p class="lead">
+                        Currently, I am doing my masters in Computer Science from Southern Illinois University
+                        Edwardsville. Until recently I was at Dreams Quest working remotely from Kathmandu, Nepal.
+                        Before that I was in a company call Elementos working on a turn based multiplayer game.
 
-        // Show the "About Me" section by default
-        document.addEventListener('DOMContentLoaded', function() {
-            showSection('about');
-        });
-    </script>
+                        I would love to chat about internship opportunities, project I have worked on so far or
+                        anything.
+
+                        Check out this Porfolio I created so that I could tell you what I have worked till now. I could
+                        not add some of the project and work due to NDA. I have added some of that on my Paper Portfolio
+                        below.
+
+                        See you around! ✌️
+                    </p>
+                </div>
+            </div>
+            <!-- About Section Button-->
+            <div class="text-center mt-4">
+                <a class="btn btn-xl btn-outline-light" href="https://drive.google.com/file/d/1FQBgJy1C8ryQCIHtXpsxhtxsu3syfwb1/view" target="_blank">
+                    <i class="fas fa-download me-2"></i>
+                    Check out my CV
+                </a>
+            </div>
+        </div>
+    </section>
+    <!-- Contact Section-->
+    <section class="page-section" id="contact">
+        <div class="container">
+            <!-- Contact Section Heading-->
+            <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Contact Me</h2>
+            <!-- Icon Divider-->
+            <div class="divider-custom">
+                <div class="divider-custom-line"></div>
+                <div class="divider-custom-icon"><i class="fas fa-rocket"></i></div>
+                <div class="divider-custom-line"></div>
+            </div>
+            <!-- Contact Section Form-->
+            <div class="row justify-content-center">
+                <div class="col-lg-8 col-xl-7"></div>
+            </div>
+        </div>
+    </section>
+    <!-- Footer-->
+    <footer class="footer text-center">
+        <div class="container">
+            <div class="row  justify-content-center">
+                <!-- Footer Location-->
+                <div class="col-lg-4 mb-5 mb-lg-0">
+                    <h4 class="text-uppercase mb-4">Location</h4>
+                    <p class="lead mb-0">
+                        Edwardsville, IL
+                        <br />
+                    </p>
+                </div>
+                <!-- Footer Social Icons-->
+                <div class="col-lg-4 mb-5 mb-lg-0">
+                    <h4 class="text-uppercase mb-4">Around the Web</h4>
+                    <a class="btn btn-outline-light btn-social mx-1"
+                        href="https://www.linkedin.com/in/jorgechavarriachaves/" target="_blank"><i
+                            class="fab fa-fw fa-linkedin-in"></i></a>
+                    <a class="btn btn-outline-light btn-social mx-1" href="https://drive.google.com/file/d/17bVYqINTgLBhc24PPVVmJJZ2IGWUaBqc/view?usp=sharing"
+                        target="_blank"><i class="fas fa-id-card"></i></a>
+                    <a class="btn btn-outline-light btn-social mx-1" href="https://github.com/NeplayGames"
+                        target="_blank"><i class="fab fa-fw fa-github"></i></a>
+                </div>           
+            </div>
+        </div>
+    </footer>
+    <!-- Copyright Section-->
+    <div class="copyright py-4 text-center text-white">
+        <div class="container"><small>Copyright &copy; shreejan 2025</small></div>
+    </div>
+    <!-- Portfolio Modals-->
+    <!-- Portfolio Modal 1-->
+    <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" aria-labelledby="portfolioModal1"
+        aria-hidden="true">
+        <div class="modal-dialog modal-xl">
+            <div class="modal-content">
+                <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal"
+                        aria-label="Close"></button></div>
+                <div class="modal-body text-center pb-5">
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <!-- Portfolio Modal - Title-->
+                                <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Games</h2>
+                                <!-- Icon Divider-->
+                                <div class="divider-custom">
+                                    <div class="divider-custom-line"></div>
+                                    <div class="divider-custom-icon"><i class="fas fa-laptop-code"></i></div>
+                                    <div class="divider-custom-line"></div>
+                                </div>
+                                <!-- Portfolio Modal - Image-->
+                                <img class="img-fluid rounded mb-5" src="assets/img/portfolio/game.png" alt="..." />
+                                <!-- Portfolio Modal - Text-->
+                                <p class="mb-4">A couple of games that I have created for webgl.
+                                </p>
+                                <button class="btn btn-primary" onclick="window.location.href='https://shreejanpandey.itch.io/';">
+                                    itch
+                                </button>
+                            </br></br></br>
+                                <button class="btn btn-primary" data-bs-dismiss="modal">
+                                    <i class="fas fa-xmark fa-fw"></i>
+                                    Close Window
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Portfolio Modal 2-->
+    <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" aria-labelledby="portfolioModal2"
+        aria-hidden="true">
+        <div class="modal-dialog modal-xl">
+            <div class="modal-content">
+                <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal"
+                        aria-label="Close"></button></div>
+                <div class="modal-body text-center pb-5">
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <!-- Portfolio Modal - Title-->
+                                <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Tasty Cake</h2>
+                                <!-- Icon Divider-->
+                                <div class="divider-custom">
+                                    <div class="divider-custom-line"></div>
+                                    <div class="divider-custom-icon"><i class="fas fa-laptop-code"></i></div>
+                                    <div class="divider-custom-line"></div>
+                                </div>
+                                <!-- Portfolio Modal - Image-->
+                                <img class="img-fluid rounded mb-5" src="assets/img/portfolio/cake.png" alt="..." />
+                                <!-- Portfolio Modal - Text-->
+                                <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque
+                                    assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam
+                                    velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.
+                                </p>
+                                <button class="btn btn-primary" data-bs-dismiss="modal">
+                                    <i class="fas fa-xmark fa-fw"></i>
+                                    Close Window
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/scripts.js"></script>
 </body>
+
 </html>
